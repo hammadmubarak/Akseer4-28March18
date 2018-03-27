@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:onClick="openHCP"
+    tools:context="com.akseer.puzzlerz.akseer.PR18Activity">
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/l2"
+        android:layout_marginTop="42dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/navigation"
+        app:layout_constraintTop_toBottomOf="@+id/spinner2"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="0dp"></ListView>
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/colorAccent"
+        android:entries="@array/country_arrays2"
+        android:paddingLeft="30dp" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignBottom="@+id/layout"
+        android:layout_below="@+id/spinner2"
+        android:layout_weight="0"
+        android:background="@color/Azure"></View>
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignBottom="@+id/layout"
+        android:layout_below="@+id/spinner2"
+        android:layout_weight="0"
+        android:background="@color/Azure"
+        app:layout_constraintBottom_toTopOf="@+id/list"></View>
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/spinner2"
+        android:background="@color/bottomnavcolor"
+        android:gravity="center"
+        android:text="Last Updated On: 25-NOV-2017"
+        android:textAlignment="gravity"
+        android:textColor="@android:color/black" />
+
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="27dp"
+        android:layout_below="@+id/date"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.077">
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:gravity="center|start"
+            android:paddingLeft="25dp"
+            android:text="Portfolio Current Value:"
+            android:textColor="@android:color/black"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/pcv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingRight="50dp"
+            android:text="1.00"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black"
+            android:textColorLink="@android:color/black"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l2"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_below="@+id/l1"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.12">
+
+        <TextView
+            android:id="@+id/message2"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:gravity="center|start"
+            android:paddingLeft="25dp"
+            android:text="Portfolio Beginning Value:"
+            android:textColor="@android:color/black"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/pbv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingRight="50dp"
+            android:text="1.00"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black"
+            android:textColorLink="@android:color/black"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/l2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:id="@+id/view31"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="0"
+            android:background="@android:color/darker_gray"></View>
+
+        <TableRow
+            android:id="@+id/tablerow"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:text="Return Analysis"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:gravity="center_vertical|center"
+                android:text="Porfolio"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="81dp"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:layout_gravity="center"
+                android:text="KSE-100"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+
+        </TableRow>
+
+        <View
+            android:id="@+id/vie1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="0"
+            android:background="@android:color/darker_gray"></View>
+
+    </TableLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/bottomnavcolor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/navigation" />
+
+
+</RelativeLayout>

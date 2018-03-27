@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <ImageView
+            android:id="@+id/list_post_image"
+            android:layout_width="140dp"
+            android:layout_height="100dp"
+            android:layout_column="0"
+            android:layout_gravity="fill_horizontal|center"
+            android:layout_row="0"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/newsprofile" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_column="1"
+            android:layout_row="0"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:paddingLeft="15dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:text="POLITICS"
+                    android:textAllCaps="true"
+                    android:textColor="#c1c1c1"
+                    android:textColorHighlight="#bfbfbf"
+                    android:textColorHint="@color/colorAccent"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="125dp" />
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="1dp"
+                    android:layout_height="10dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_toEndOf="@id/category"
+                    android:background="#FF909090" />
+
+                <TextView
+                    android:id="@+id/impact"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_alignBaseline="@+id/category"
+                    android:layout_alignBottom="@+id/category"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toEndOf="@+id/view"
+                    android:text="NEGATIVE"
+                    android:textColor="#e82e25"
+                    android:textColorHint="@color/colorAccent"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    tools:ignore="MissingConstraints" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/list_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="asdasdasdasdasdasdasdja nadsdn asmd amsdn amsndmna sdmasdmbn @android:string/defaultMsisdnAlphaTag"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/list_post_datetime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:gravity="center"
+                    android:maxLength="10"
+                    android:paddingRight="20dp"
+                    android:text="05-09-2017"
+                    android:textColor="@color/Azure"
+                    android:textColorHint="@color/colorAccent"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/list_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:gravity="center"
+                    android:paddingRight="20dp"
+                    android:text="05-09-2017"
+                    android:textColor="@color/Azure"
+                    android:textColorHint="@color/colorAccent"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:visibility="invisible"
+                    tools:ignore="MissingConstraints" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
+

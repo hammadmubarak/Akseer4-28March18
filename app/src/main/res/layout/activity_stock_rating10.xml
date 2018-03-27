@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.akseer.puzzlerz.akseer.StockRating10">
+
+    <!-- <LinearLayout
+         android:id="@+id/heading"
+         android:layout_width="match_parent"
+         android:layout_height="30dp"
+         android:layout_below="@+id/search">
+         <TextView
+             android:layout_width="100dp"
+             android:layout_height="wrap_content"
+             android:padding="3dip"
+             android:text="Company:"
+             android:textColor="#000000"
+             android:textStyle="bold" />
+         <TextView
+             android:layout_width="200dp"
+             android:layout_height="wrap_content"
+             android:padding="3dip"
+             android:text="Pakistan State Oil"
+             android:textColor="#000000"
+             android:textStyle="bold" />
+     </LinearLayout>
+     <TableLayout
+         android:id="@+id/table"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/heading"
+         tools:layout_editor_absoluteX="0dp"
+         tools:layout_editor_absoluteY="36dp">
+         <TableRow>
+             <TextView
+                 android:layout_width="60dp"
+                 android:layout_column="0"
+                 android:padding="3dip"
+                 android:text="Symbol:"
+                 android:textColor="#000000"
+                 android:textStyle="bold" />
+             <TextView
+                 android:id="@+id/symbolxml"
+                 android:layout_width="80dp"
+                 android:layout_column="1"
+                 android:padding="3dip"
+                 android:text="HBL" />
+             <TextView
+                 android:layout_width="100dp"
+                 android:layout_column="2"
+                 android:padding="3dip"
+                 android:text="Current Price:"
+                 android:textColor="#000000"
+                 android:textStyle="bold" />
+             <TextView
+                 android:id="@+id/CurrentPrice"
+                 android:layout_width="60dp"
+                 android:layout_column="3"
+                 android:padding="3dip"
+                 android:text="566.00" />
+         </TableRow>
+         <TableRow>
+             <TextView
+                 android:layout_width="100dp"
+                 android:layout_column="0"
+                 android:padding="3dip"
+                 android:text="Target Price:"
+                 android:textColor="#000000"
+                 android:textStyle="bold" />
+             <TextView
+                 android:id="@+id/TargetPrice"
+                 android:layout_width="60dp"
+                 android:layout_column="1"
+                 android:padding="3dip"
+                 android:text="234.50" />
+             <TextView
+                 android:layout_width="60dp"
+                 android:layout_column="2"
+                 android:padding="3dip"
+                 android:text="Upside:"
+                 android:textColor="#000000"
+                 android:textStyle="bold" />
+             <TextView
+                 android:id="@+id/upside"
+                 android:layout_width="60dp"
+                 android:layout_column="2"
+                 android:padding="3dip"
+                 android:text="-44%"
+                 android:textColor="#199f70"
+                 android:textStyle="bold" />
+         </TableRow>
+         <TableRow>
+             <TextView
+                 android:layout_width="60dp"
+                 android:layout_column="0"
+                 android:padding="3dip"
+                 android:text="Recomm:"
+                 android:textColor="#000000"
+                 android:textStyle="bold" />
+             <TextView
+                 android:layout_width="60dp"
+                 android:layout_column="1"
+                 android:padding="3dip"
+                 android:text="Buy"
+                 android:textColor="#199f70"
+                 android:textStyle="bold" />
+             <TextView
+                 android:layout_width="60dp"
+                 android:layout_column="2"
+                 android:padding="3dip"
+                 android:text="Year End:"
+                 android:textColor="#000000"
+                 android:textStyle="bold" />
+             <TextView
+                 android:id="@+id/year_end"
+                 android:layout_width="60dp"
+                 android:layout_column="2"
+                 android:padding="3dip"
+                 android:text="DEC" />
+         </TableRow>
+         <View
+             android:layout_height="1dip"
+             android:background="#FF909090" />
+     </TableLayout>-->
+
+    <SearchView
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/bottomnavcolor"
+        android:hint="Search Symbol" >
+
+    </SearchView>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/search"></ListView>
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/bottomnavcolor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/bottom_navigation_main">
+
+    </android.support.design.widget.BottomNavigationView>
+
+</RelativeLayout>
+

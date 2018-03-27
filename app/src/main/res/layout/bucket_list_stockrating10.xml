@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/search">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:padding="3dip"
+            android:text="Company:"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:padding="3dip"
+            android:text="Pakistan State Oil"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/heading"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="36dp">
+
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_column="0"
+                android:padding="3dip"
+                android:text="Symbol:"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/symbolxml"
+                android:layout_width="80dp"
+                android:layout_column="1"
+                android:padding="3dip"
+                android:text="HBL" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_column="2"
+                android:padding="3dip"
+                android:text="Current Price:"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/CurrentPrice"
+                android:layout_width="60dp"
+                android:layout_column="3"
+                android:padding="3dip"
+                android:text="566.00" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_column="0"
+                android:padding="3dip"
+                android:text="Target Price:"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TargetPrice"
+                android:layout_width="60dp"
+                android:layout_column="1"
+                android:padding="3dip"
+                android:text="234.50" />
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_column="2"
+                android:padding="3dip"
+                android:text="Upside:"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/upside"
+                android:layout_width="60dp"
+                android:layout_column="2"
+                android:padding="3dip"
+                android:text="-44%"
+                android:textColor="#199f70"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_column="0"
+                android:padding="3dip"
+                android:text="Recomm:"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_column="1"
+                android:padding="3dip"
+                android:text="Buy"
+                android:textColor="#199f70"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_column="2"
+                android:padding="3dip"
+                android:text="Year End:"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/year_end"
+                android:layout_width="60dp"
+                android:layout_column="2"
+                android:padding="3dip"
+                android:text="DEC" />
+        </TableRow>
+
+        <View
+            android:layout_height="1dip"
+            android:background="#FF909090" />
+
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/search"
+        android:orientation="vertical"
+        android:padding="20dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="50dp">
+
+
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_column="1"
+                    android:padding="3dip"
+                    android:text="2016"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_column="2"
+                    android:padding="3dip"
+                    android:text="2017"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_column="2"
+                    android:padding="3dip"
+                    android:text="2018"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <View
+                android:layout_height="1dip"
+                android:background="#FF909090" />
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_column="0"
+                    android:padding="3dip"
+                    android:text="EPS(PKR):"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/eps_twenty16"
+                    android:layout_width="80dp"
+                    android:layout_column="1"
+                    android:padding="3dip"
+                    android:text="9.90" />
+
+
+                <TextView
+                    android:id="@+id/eps_twenty17"
+                    android:layout_width="80dp"
+                    android:layout_column="2"
+                    android:padding="3dip"
+                    android:text="13.90" />
+
+                <TextView
+                    android:id="@+id/eps_twenty18"
+                    android:layout_width="60dp"
+                    android:layout_column="1"
+                    android:padding="3dip"
+                    android:text="4.00" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_column="0"
+                    android:padding="3dip"
+                    android:text="DPS(PKR):"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/dps_twenty16"
+                    android:layout_width="80dp"
+                    android:layout_column="1"
+                    android:padding="3dip"
+                    android:text="9.90" />
+
+
+                <TextView
+                    android:id="@+id/dps_twenty17"
+                    android:layout_width="80dp"
+                    android:layout_column="2"
+                    android:padding="3dip"
+                    android:text="13.90" />
+
+                <TextView
+                    android:id="@+id/dps_twenty18"
+                    android:layout_width="80dp"
+                    android:layout_column="1"
+                    android:padding="3dip"
+                    android:text="4.00" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="0"
+                    android:padding="3dip"
+                    android:text="BVPS(PKR):"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/bvps_twenty16"
+                    android:layout_width="80dp"
+                    android:layout_column="1"
+                    android:padding="3dip"
+                    android:text="9.90" />
+
+
+                <TextView
+                    android:id="@+id/bvps_twenty17"
+                    android:layout_width="60dp"
+                    android:layout_column="2"
+                    android:padding="3dip"
+                    android:text="13.90" />
+
+                <TextView
+                    android:id="@+id/bvps_twenty18"
+                    android:layout_width="60dp"
+                    android:layout_column="1"
+                    android:padding="3dip"
+                    android:text="4.00" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="0"
+                    android:padding="3dip"
+                    android:text="PER(x):"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/per_twenty16"
+                    android:layout_width="80dp"
+                    android:layout_column="1"
+                    android:padding="3dip"
+                    android:text="9.90" />
+
+
+                <TextView
+                    android:id="@+id/per_twenty17"
+                    android:layout_width="60dp"
+                    android:layout_column="2"
+                    android:padding="3dip"
+                    android:text="13.90" />
+
+                <TextView
+                    android:id="@+id/per_twenty18"
+                    android:layout_width="60dp"
+                    android:layout_column="1"
+                    android:padding="3dip"
+                    android:text="4.00" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="0"
+                    android:padding="3dip"
+                    android:text="Div Yield(%):"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/divYield_twenty16"
+                    android:layout_width="80dp"
+                    android:layout_column="1"
+                    android:padding="3dip"
+                    android:text="9.90" />
+
+
+                <TextView
+                    android:id="@+id/divYield_twenty17"
+                    android:layout_width="60dp"
+                    android:layout_column="2"
+                    android:padding="3dip"
+                    android:text="13.90" />
+
+                <TextView
+                    android:id="@+id/divYield_twenty18"
+                    android:layout_width="60dp"
+                    android:layout_column="1"
+                    android:padding="3dip"
+                    android:text="4.00" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="0"
+                    android:padding="3dip"
+                    android:text="PVB(x):"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_column="1"
+                    android:padding="3dip"
+                    android:text="9.90" />
+
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_column="2"
+                    android:padding="3dip"
+                    android:text="13.90" />
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_column="1"
+                    android:padding="3dip"
+                    android:text="4.00" />
+
+            </TableRow>
+
+            <View
+                android:layout_height="1dip"
+                android:background="#FF909090" />
+        </TableLayout>
+    </LinearLayout>
+</LinearLayout>
+

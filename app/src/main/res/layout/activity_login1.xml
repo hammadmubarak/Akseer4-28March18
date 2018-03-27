@@ -1,0 +1,177 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_akseer"
+    android:orientation="vertical"
+    android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+<!--    <com.google.android.gms.common.SignInButton
+        android:id="@+id/glogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"></com.google.android.gms.common.SignInButton>-->
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
+        android:visibility="gone" />
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center"
+        android:layout_marginTop="55sp"
+        app:srcCompat="@drawable/logo_akseer" />
+
+    <LinearLayout
+        android:id="@+id/email_login_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:background="@android:color/transparent"
+                android:hint="Email"
+                android:imeActionId="6"
+                android:imeActionLabel=""
+                android:imeOptions="actionUnspecified"
+                android:inputType="textEmailAddress"
+                android:paddingTop="10dp"
+                android:singleLine="true" />
+
+            <View
+                android:id="@+id/view15"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="@android:color/darker_gray"></View>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp">
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:background="@android:color/transparent"
+                android:hint="Password"
+                android:imeActionId="6"
+                android:imeActionLabel=""
+                android:imeOptions="actionUnspecified"
+                android:inputType="textPassword"
+                android:paddingTop="10dp"
+                android:singleLine="true" />
+
+            <View
+                android:id="@+id/view16"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="@android:color/darker_gray"></View>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/loginButton"
+            android:layout_width="360dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:autoText="false"
+            android:background="@android:drawable/dialog_holo_dark_frame"
+            android:backgroundTint="@android:color/darker_gray"
+            android:onClick="openHomeActivity"
+            android:paddingBottom="10dp"
+            android:text="Login"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_dark" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="30sp">
+
+            <ImageButton
+                android:id="@+id/googleButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/transparent"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/g1" />
+            <View
+                android:layout_height="50dp"
+                android:layout_width="1dp"
+                android:background="#FF909090" />
+
+            <ImageButton
+                android:id="@+id/fbButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/transparent"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/f1"
+                tools:srcCompat="@android:drawable/edit_text" />
+            />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/signup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:onClick="openSignUpActivity"
+            android:text="Sign up for Akseer"
+            android:textColor="@color/Azure"
+            android:textColorHint="@color/Azure"
+            android:textSize="16dip" />
+
+        <TextView
+            android:id="@+id/signInBtn3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="openForgetPassword"
+            android:paddingTop="10dp"
+            android:text="Forgot Password?"
+            android:textColor="@color/Azure"
+            android:textColorHint="@color/Azure" />
+
+    </LinearLayout>
+</LinearLayout>

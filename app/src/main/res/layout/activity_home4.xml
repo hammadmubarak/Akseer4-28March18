@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.akseer.puzzlerz.akseer.NewsActivity4">
+
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toTopOf="@+id/navigation"
+        tools:layout_editor_absoluteX="0dp"></ListView>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#eceaeb"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/bottom_navigation_main">
+
+    </android.support.design.widget.BottomNavigationView>
+
+    <!--   <GridLayout
+          android:id="@+id/newsGrid"
+          android:layout_width="395dp"
+          android:layout_height="495dp"
+          tools:layout_editor_absoluteX="8dp"
+          tools:layout_editor_absoluteY="54dp"
+           android:orientation="vertical">
+
+          &lt;!&ndash;<LinearLayout
+              android:background="@drawable/border">&ndash;&gt;
+
+              <ImageView
+                  android:id="@+id/imageView"
+                  android:layout_width="145dp"
+                  android:layout_height="100dp"
+                  android:layout_column="0"
+                  android:layout_row="0"
+                  app:srcCompat="@drawable/newsprofile" />
+
+           <LinearLayout
+               android:layout_width="240dp"
+               android:layout_height="match_parent"
+               android:layout_column="1"
+               android:layout_row="0"
+
+               android:orientation="horizontal"></LinearLayout>
+          &lt;!&ndash;</LinearLayout>&ndash;&gt;
+
+           <LinearLayout
+               android:background="@drawable/border">
+               <ImageView
+                   android:id="@+id/imageView2"
+                   android:layout_width="145dp"
+                   android:layout_height="100dp"
+                   android:layout_column="0"
+                   android:layout_row="1"
+                   app:srcCompat="@drawable/newsprofile" />
+
+               <LinearLayout
+                   android:layout_width="240dp"
+                   android:layout_height="match_parent"
+                   android:layout_column="1"
+                   android:layout_row="1"
+
+                   android:orientation="horizontal"></LinearLayout>
+           </LinearLayout>
+       </GridLayout>-->
+    <!--   <Spinner
+           android:id="@+id/spinner1"
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:backgroundTint="@color/yellow"
+           android:backgroundTintMode="src_atop"
+           />
+
+       <GridLayout
+           android:id="@+id/marketGrid"
+           android:layout_width="395dp"
+           android:layout_height="495dp"
+           tools:layout_editor_absoluteX="8dp"
+           tools:layout_editor_absoluteY="54dp">
+           <TextView
+               android:id="@+id/textView"
+               android:layout_width="120dp"
+               android:layout_height="35dp"
+               android:layout_column="0"
+               android:layout_row="0"
+               android:text="TextView"
+               tools:layout_editor_absoluteX="16dp"
+               tools:layout_editor_absoluteY="53dp" />
+           <TextView
+               android:id="@+id/textView2"
+               android:layout_width="120dp"
+               android:layout_height="35dp"
+               android:layout_column="1"
+               android:layout_row="0"
+               android:text="TextView"
+               tools:layout_editor_absoluteX="16dp"
+               tools:layout_editor_absoluteY="53dp" />
+           <TextView
+               android:id="@+id/textView3"
+               android:layout_width="120dp"
+               android:layout_height="35dp"
+               android:layout_column="2"
+               android:layout_row="0"
+               android:text="TextView"
+               tools:layout_editor_absoluteX="16dp"
+               tools:layout_editor_absoluteY="53dp" />
+           <TextView
+               android:id="@+id/textView11"
+               android:layout_width="120dp"
+               android:layout_height="35dp"
+               android:layout_column="0"
+               android:layout_row="1"
+               android:text="TextView"
+               tools:layout_editor_absoluteX="16dp"
+               tools:layout_editor_absoluteY="53dp" />
+           <TextView
+               android:id="@+id/textView12"
+               android:layout_width="120dp"
+               android:layout_height="35dp"
+               android:layout_column="1"
+               android:layout_row="1"
+               android:text="TextView"
+               tools:layout_editor_absoluteX="16dp"
+               tools:layout_editor_absoluteY="53dp" />
+           <TextView
+               android:id="@+id/textView13"
+               android:layout_width="120dp"
+               android:layout_height="35dp"
+               android:layout_column="2"
+               android:layout_row="1"
+               android:text="TextView"
+               tools:layout_editor_absoluteX="16dp"
+               tools:layout_editor_absoluteY="53dp" />
+
+       </GridLayout>-->
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1c4585</color>
+    <color name="colorPrimaryDark">#807f7e</color>
+    <color name="colorAccent">#ecac0c</color>
+    <color name="Azure">#81807e</color>
+    <color name="bottomnavcolor">#eceaeb</color>
+
+    <color name="black_overlay">#bfbfbf</color>
+
+</resources>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/forex2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="132dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|start"
+                android:paddingLeft="20dp"
+                android:text="CAD"
+                android:textAllCaps="true"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/longname"
+                android:layout_width="match_parent"
+                android:layout_height="17dp"
+                android:layout_weight="1"
+                android:gravity="center|start"
+                android:paddingLeft="20dp"
+                android:text="Canadian doll"
+                android:textAllCaps="true"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/data_value"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:maxLength="5"
+            android:text="0.169"
+            android:textAllCaps="true" />
+
+        <TextView
+            android:id="@+id/todays_change"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="0.18%"
+            android:textAllCaps="true"
+            android:textColor="#db2329" />
+
+        <ImageView
+            android:id="@+id/imapact"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_column="3"
+            android:layout_weight="1"
+            android:adjustViewBounds="false"
+            android:gravity="center"
+            android:paddingRight="10dp"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            android:textAllCaps="true" />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
+

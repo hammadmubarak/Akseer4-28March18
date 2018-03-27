@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/bottomnavcolor"
+    >
+
+    <item
+        android:id="@+id/News"
+        android:icon="@drawable/newsicon"
+        android:title="News"
+        android:enabled="true"
+
+
+        />
+    <item
+        android:id="@+id/Market"
+        android:icon="@drawable/marketoicon"
+        android:title="Market"
+        android:enabled="true"
+
+
+        />
+    <item
+        android:id="@+id/Akseer"
+        android:icon="@drawable/akseericon"
+        android:title="Akseer"
+        android:enabled="true"
+
+
+        />
+
+    <item
+        android:id="@+id/Broker"
+        android:icon="@drawable/broker_icon"
+        android:title="Broker"
+        android:enabled="true"
+
+
+        />
+
+
+
+</menu>

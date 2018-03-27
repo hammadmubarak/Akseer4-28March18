@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/colorPrimaryDark">
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|start"
+            android:layout_marginBottom="20dp"
+            android:paddingLeft="30dp"
+            android:text="You have just paid"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|start"
+            android:paddingLeft="30dp"
+            android:text="$370 = $18.50(tip) = $388.50"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:text="Please Sign Below for confirmation"
+            android:textAlignment="center"
+            android:textSize="10sp" />
+
+        <android.support.v4.view.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/sig"
+            android:scaleX="0.7"
+            android:scaleY="0.3" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_signup4"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@android:drawable/dialog_holo_dark_frame"
+            android:backgroundTint="@color/colorPrimary"
+            android:onClick="openMainActivity"
+            android:text="Email Reciept"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textColor="@android:color/background_light" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_signup3"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@android:drawable/dialog_holo_dark_frame"
+            android:backgroundTint="@color/colorPrimary"
+            android:onClick="openMainActivity"
+            android:text="Download Reciept"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textColor="@android:color/background_light" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

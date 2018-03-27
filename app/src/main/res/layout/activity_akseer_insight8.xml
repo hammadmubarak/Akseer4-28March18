@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.akseer.puzzlerz.akseer.AkseerInsightActivity8">
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/bottomnavcolor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/bottom_navigation_main" />
+
+  <!--  <ListView
+        android:id="@+id/list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></ListView>-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/postImage"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/sky"
+                tools:layout_editor_absoluteX="6dp"
+                tools:layout_editor_absoluteY="-1dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:layout_marginLeft="10dp">
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:text="Industry:"
+                    android:textColor="@android:color/black"
+                    android:textSize="8sp" />
+
+                <TextView
+                    android:id="@+id/category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:paddingLeft="2dp"
+                    android:text="Talha Ismail"
+                    android:textSize="8sp" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:text="Analyst:"
+                    android:textColor="@android:color/black"
+                    android:textSize="8sp" />
+
+                <TextView
+                    android:id="@+id/author"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="2dp"
+                    android:text="Awais Aslam"
+                    android:textSize="8sp" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:text="Published on:"
+                    android:textColor="@android:color/black"
+                    android:textSize="8sp" />
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="2dp"
+                    android:text="05-09-2017"
+                    android:textColor="#bfbfbf"
+                    android:textColorHint="@color/colorAccent"
+                    android:textSize="8sp"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="260dp"
+                    tools:layout_editor_absoluteY="170dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="#eceaeb"
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:text="Free Oil and Gas \nmanagement Dissertation Topics"
+                android:textAlignment="textStart"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/colorAccent"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="80dp"
+                tools:layout_editor_absoluteY="200dp" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="350dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="Do you ever see a nice color used on a web site, picture, graphic, application, etc... and want to know the RGB or the HTML hex code of that color? \nColor Detector allows you to find out just that! Simply point the mouse cursor anywhere on the screen, and the application will tell you for the pixel where the mouse cursor is pointing: the RGB color values, the HTML color hex code, and the name of the color in plain English. It also shows the mouse's current X and Y coordinates. The ability to copy the HTML color hex code or the RGB color values to the clipboard is also available."
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@color/Azure"
+                android:textColorHint="@color/colorAccent"
+                android:textSize="14sp"
+                tools:layout_editor_absoluteX="80dp"
+                tools:layout_editor_absoluteY="270dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

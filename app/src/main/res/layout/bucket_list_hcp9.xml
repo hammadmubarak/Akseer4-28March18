@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <TableLayout
+        android:id="@+id/table1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:stretchColumns="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="4dp">
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="99dp"
+                android:layout_column="0"
+                android:paddingLeft="2dp"
+                android:text="Symbol"
+                android:textColor="@color/Azure"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/symbol"
+                android:layout_width="60dp"
+
+                android:layout_column="1"
+                android:text="MCB" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:text="Allocation"
+                android:textColor="@color/Azure"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/allocation"
+                android:layout_width="match_parent"
+                android:layout_column="3"
+                android:padding="3dip"
+                android:text="25%" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="111dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:paddingLeft="2dp"
+                android:text="Entry Price:"
+                android:textColor="@color/Azure"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/EntryPrice"
+                android:layout_width="76dp"
+                android:layout_column="1"
+                android:text="32.00" />
+
+            <TextView
+                android:layout_column="2"
+                android:text="Current Price:"
+                android:textColor="@color/Azure"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/currentprice"
+                android:layout_width="wrap_content"
+                android:layout_column="3"
+                android:padding="3dip"
+                android:text="35.00" />
+        </TableRow>
+
+        <TableRow android:paddingBottom="10dp">
+
+            <TextView
+                android:layout_width="104dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:paddingLeft="2dp"
+                android:text="Return:"
+                android:textColor="@color/Azure"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/returnText"
+                android:layout_width="63dp"
+                android:layout_column="1"
+                android:text="25%"
+                android:textColor="#199f70"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/buttonResearch"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_column="0"
+                android:layout_span="2"
+                android:gravity="center"
+                android:text="View Research"
+                android:textSize="10sp" />
+
+
+        </TableRow>
+
+        <View
+            android:layout_height="1dip"
+            android:background="#FF909090"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" />
+    </TableLayout>
+</LinearLayout>
+
