@@ -126,6 +126,9 @@ public class ForexRatesActivity14 extends AppCompatActivity {
                 return true;*/
             case R.id.logout:
                 startActivity(new Intent(ForexRatesActivity14.this, LoginActivity1.class));
+                finishAffinity();
+                finish();
+
                 return true;
             case R.id.Share:
 //                startActivity(new Intent(NewsInsideActivity5.this, AdditionDeletion17.class));

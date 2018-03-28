@@ -110,6 +110,9 @@ public class KiborActivity11 extends AppCompatActivity {
                 return true;*/
             case R.id.logout:
                 startActivity(new Intent(KiborActivity11.this, LoginActivity1.class));
+                finishAffinity();
+                finish();
+
                 return true;
             case R.id.Share:
 //                startActivity(new Intent(NewsInsideActivity5.this, AdditionDeletion17.class));

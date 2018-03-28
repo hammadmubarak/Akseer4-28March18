@@ -148,6 +148,8 @@ public class LoginActivity1 extends AppCompatActivity implements GoogleApiClient
             @Override
             public void onSuccess(LoginResult loginResult) {
                 startActivity(new Intent(LoginActivity1.this, NewsActivity4.class));
+                finish();
+
             }
 
             @Override
@@ -191,6 +193,8 @@ public class LoginActivity1 extends AppCompatActivity implements GoogleApiClient
                                       public void onClick(View v) {
                                           // TODO Auto-generated method stub
                                           startActivity(new Intent(LoginActivity1.this, NewsActivity4.class));
+                                          finish();
+
                                           new LoginActivity1.getStudents().execute();
 
                                       }
@@ -242,6 +246,8 @@ public class LoginActivity1 extends AppCompatActivity implements GoogleApiClient
         if(result.isSuccess())
         {
             startActivity(new Intent(LoginActivity1.this, NewsActivity4.class));
+            finish();
+
         }
 
         else
@@ -363,6 +369,8 @@ public class LoginActivity1 extends AppCompatActivity implements GoogleApiClient
 
                 Toast.makeText(getApplicationContext(), message, Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(LoginActivity1.this, NewsActivity4.class));
+                finish();
+
             } else {
 
 

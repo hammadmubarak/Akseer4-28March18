@@ -19,14 +19,17 @@
         <activity
             android:name=".NewsActivity4"
             android:label="News"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            />
         <activity
             android:name=".NewsInsideActivity5"
             android:label="News"
             android:screenOrientation="portrait" />
         <activity
             android:name=".LoginActivity1"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"
+            >
 
         </activity>
         <activity

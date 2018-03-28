@@ -103,6 +103,10 @@ public class PR18Activity extends AppCompatActivity {
                 return true;*/
             case R.id.logout:
                 startActivity(new Intent(PR18Activity.this, LoginActivity1.class));
+                finishAffinity();
+
+                finish();
+
                 return true;
             case R.id.Share:
 //                startActivity(new Intent(NewsInsideActivity5.this, AdditionDeletion17.class));

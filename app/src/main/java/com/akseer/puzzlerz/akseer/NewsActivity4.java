@@ -122,6 +122,7 @@ public class NewsActivity4 extends AppCompatActivity {
         switch (item.getItemId()) {
             case R.id.Disclaimer:
                 startActivity(new Intent(NewsActivity4.this, DisclaimerActivity16.class));
+
                 return true;
          /*   case R.id.PerformanceReviews:
                 startActivity(new Intent(NewsActivity4.this, PR18Activity.class));
@@ -131,6 +132,8 @@ public class NewsActivity4 extends AppCompatActivity {
                 return true;*/
             case R.id.logout:
                 startActivity(new Intent(NewsActivity4.this, LoginActivity1.class));
+                finishAffinity();
+                finish();
                 return true;
             case R.id.Share:
 //                startActivity(new Intent(NewsInsideActivity5.this, AdditionDeletion17.class));

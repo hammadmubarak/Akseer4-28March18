@@ -104,6 +104,9 @@ public class MarketsActivity6 extends AppCompatActivity {
                 return true;*/
             case R.id.logout:
                 startActivity(new Intent(MarketsActivity6.this, LoginActivity1.class));
+                finishAffinity();
+                finish();
+
                 return true;
             case R.id.Share:
 //                startActivity(new Intent(NewsInsideActivity5.this, AdditionDeletion17.class));
